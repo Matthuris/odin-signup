@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(fonts/norse-bold-webfont.woff2);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(fonts/roboto-bold-webfont.woff);
+  src: url(fonts/roboto-bold-webfont.woff2);
+}
+
+body {
+  margin: 0;
+  font-family: "Times", sans-serif;
+}
+
+a {
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.hero-div {
+  height: 100%;
+  width: 100%;
+  background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+.hero-img {
+  height: 100%;
+  width: 100%;
+}
+.title-div {
+  display: flex;
+  position: relative;
+  top: 25%;
+
+  height: 12.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.title-div img {
+  height: 90%;
+  width: auto;
+  padding: 10%, 0%;
+}
+.title-div h1 {
+  font-family: "Norse Bold";
+  color: white;
+  font-size: 500%;
+}
+
+.credit-div {
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  color: white;
+  text-align: center;
+}
+.content-div {
+  flex: 2;
+  background-color: rgb(249, 250, 251);
+}
