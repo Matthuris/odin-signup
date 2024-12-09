@@ -139,6 +139,20 @@ body {
   flex-direction: column;
   flex: 1;
 }
+.password input + span {
+  position: relative;
+}
+.password input:invalid {
+  border: 1px solid red;
+}
+.password input:invalid + span::after {
+  font-weight: 100;
+  position: absolute;
+  bottom: -20px;
+  padding: 1%;
+  content: "*Passwords do not match";
+  color: red;
+}
 .form-right {
   flex: 1;
 }
