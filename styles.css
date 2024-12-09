@@ -11,13 +11,16 @@
   font-style: normal;
   font-weight: normal;
 }
-
+@font-face {
+  font-family: "Roboto Thin";
+  src: url(fonts/roboto-thin-webfont.woff);
+  src: url(fonts/roboto-thin-webfont.woff2);
+  font-style: normal;
+  font-weight: normal;
+}
 body {
   margin: 0;
   font-family: "Roboto Bold", sans-serif;
-}
-a {
-  color: white;
 }
 
 .container {
@@ -26,66 +29,96 @@ a {
   display: flex;
 }
 .hero-div {
-  height: 100%;
-  width: 100%;
   background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   flex: 1;
 }
-.hero-img {
-  height: 100%;
-  width: 100%;
-}
+
 .title-div {
   display: flex;
   position: relative;
-  top: 25%;
-
+  top: 18%;
   height: 12.5%;
+  min-height: fit-content;
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
 .title-div img {
-  height: 90%;
+  height: 15vh;
   width: auto;
-  padding: 10%, 0%;
+  padding: 2% 0%;
 }
 .title-div h1 {
   font-family: "Norse Bold";
   color: white;
-  font-size: 500%;
+  font-size: 6vw;
+  margin: 0%;
 }
-
 .credit-div {
   position: absolute;
   bottom: 0%;
   left: 10%;
   color: white;
+  font-family: "Roboto Thin";
+  font-size: small;
   text-align: center;
+}
+.credit-div a {
+  color: white;
 }
 .content-div {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   flex: 2;
   background-color: rgb(249, 250, 251);
 }
-
-.join-text {
+.content-top {
   flex: 1;
-
-  height: auto;
 }
-
-.sign-up {
+.join-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0% 0% 3% 4%;
   flex: 1;
-
+  font-size: 1.5em;
+}
+.join-text p {
+  margin: 0;
+}
+.sign-up {
+  flex: 2;
   height: auto;
   background-color: white;
-  box-shadow: 0px 2px 5px;
+  box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.1);
+}
+.sign-up input {
+  width: 20%;
+}
+.form-row {
+  display: flex;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .sign-in {
-  flex: 1;
+  flex: 2;
+  padding: 3% 5%;
+}
+.sign-in button {
+  background-color: #596d48;
+  font-family: "Roboto Bold";
+  color: white;
+  font-size: 1em;
+  padding: 1% 5%;
+  border: none;
+  border-radius: 7px;
+}
+.sign-in a {
+  color: #596d48;
+  text-decoration: none;
 }

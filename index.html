@@ -38,6 +38,7 @@
         </div>
       </div>
       <div class="content-div">
+        <div class="content-top"></div>
         <div class="join-text">
           <p>
             This is not a real online service! You know you need something
@@ -52,27 +53,41 @@
         <div class="sign-up">
           <h1>Let's do this!</h1>
           <form action="">
-            <div>
-              <label for="fname">FIRST NAME</label>
-              <input type="text" />
-              <label for="email">EMAIL</label>
-              <input type="text" />
-              <label for="pwd">PASSWORD</label>
-              <input type="text" />
+            <div class="form-row">
+              <div class="form-input">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" />
+              </div>
+              <div class="form-input">
+                <label for="lname">LAST NAME</label>
+                <input type="text" />
+              </div>
             </div>
-            <div>
-              <label for="lname">LAST NAME</label>
-              <input type="text" />
-              <label for="tel">PHONE NUMBER</label>
-              <input type="text" />
-              <label for="ver-pwd">CONFIRM PASSWORD</label>
-              <input type="text" />
+            <div class="form-row">
+              <div class="form-input">
+                <label for="email">EMAIL</label>
+                <input type="text" />
+              </div>
+              <div class="form-input">
+                <label for="tel">PHONE NUMBER</label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-input">
+                <label for="pwd">PASSWORD</label>
+                <input type="text" />
+              </div>
+              <div class="form-input">
+                <label for="ver-pwd">CONFIRM PASSWORD</label>
+                <input type="text" />
+              </div>
             </div>
           </form>
         </div>
         <div class="sign-in">
           <button>Create Account</button>
-          <p>Already have an account? Log in</p>
+          <p>Already have an account? <a href="log-in">Log in</a></p>
         </div>
       </div>
     </div>
