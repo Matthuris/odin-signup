@@ -117,7 +117,7 @@ body {
   color: rgb(105, 108, 117);
 }
 .sign-up input {
-  width: 50%;
+  width: 75%;
   height: 1.5em;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
@@ -137,6 +137,9 @@ body {
 .form-input {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+.form-right {
   flex: 1;
 }
 .sign-in {
